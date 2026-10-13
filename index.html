@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lúmina — Plataforma de entretenimiento cross-media</title>
+  <meta name="description" content="Lúmina unifica películas, series, libros, videojuegos y cómics en un solo espacio con recomendaciones cross-media." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">◆</span> Lúmina
+      </a>
+      <nav class="nav-links">
+        <a href="#proyecto">Proyecto</a>
+        <a href="#estado">Estado del Arte</a>
+        <a href="#valor">Propuesta de Valor</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#cronograma">Cronograma</a>
+        <a href="#equipo">Equipo</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menú">☰</button>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-inner">
+      <span class="badge">Proyecto Intermodular · DAM</span>
+      <h1>Descubre, organiza y conecta <span class="accent">todo tu entretenimiento</span></h1>
+      <p class="lead">
+        Lúmina unifica películas, series, libros, videojuegos y cómics en un solo espacio,
+        con recomendaciones cross-media basadas en tus gustos reales.
+      </p>
+      <div class="hero-actions">
+        <a href="#estado" class="btn btn-primary">Ver Estado del Arte</a>
+        <a href="#valor" class="btn btn-outline">Propuesta de Valor</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>8</strong><span>referencias analizadas</span></div>
+        <div class="stat"><strong>5</strong><span>medios unificados</span></div>
+        <div class="stat"><strong>4</strong><span>pilares diferenciales</span></div>
+        <div class="stat"><strong>1</strong><span>gap identificado</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyecto" class="section">
+    <div class="container">
+      <span class="section-tag">01 — El Proyecto</span>
+      <h2>¿Qué es Lúmina?</h2>
+      <p class="section-lead">
+        Una plataforma de descubrimiento y seguimiento de entretenimiento que reúne
+        diferentes medios en un único espacio, con un sistema de recomendaciones
+        que conecta películas, libros, videojuegos, series y cómics entre sí.
+      </p>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="card-icon">🔍</div>
+          <h3>Descubrimiento</h3>
+          <p>Recomendaciones cross-media basadas en tus valoraciones, géneros y etiquetas. Un fan de <em>Dune</em> recibe libros, videojuegos y cómics con ambientación similar.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📚</div>
+          <h3>Organización</h3>
+          <p>Listas unificadas con cuatro estados: <strong>Pendientes</strong>, <strong>En curso</strong>, <strong>Terminados</strong> y <strong>Favoritos</strong>, aplicables a cualquier medio.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Disponibilidad</h3>
+          <p>Consulta de próximos lanzamientos y dónde ver, comprar o acceder a cada obra, integrado en la propia ficha del contenido.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="estado" class="section section-alt">
+    <div class="container">
+      <span class="section-tag">02 — Estado del Arte</span>
+      <h2>Matriz de Antecedentes</h2>
+      <p class="section-lead">
+        Ocho referencias analizadas entre productos comerciales, artículos científicos
+        y proyectos open source publicados entre 2025 y 2026.
+      </p>
+      <div class="table-wrap">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>Antecedente</th>
+              <th>Tipo</th>
+              <th>Tecnología clave</th>
+              <th>Limitación principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Buck The Critics</strong></td><td><span class="pill pill-blue">Comercial</span></td><td>Grafo social + cross-media</td><td>Depende del círculo social del usuario</td></tr>
+            <tr><td><strong>Bingers</strong></td><td><span class="pill pill-blue">Comercial</span></td><td>Historial + comunidad</td><td>Solo películas, series y anime</td></tr>
+            <tr><td><strong>Stash</strong></td><td><span class="pill pill-blue">Comercial</span></td><td>Base de datos gaming</td><td>Exclusivo de videojuegos</td></tr>
+            <tr><td><strong>Cross-domain (J-STAGE)</strong></td><td><span class="pill pill-purple">Académico</span></td><td>LLM + atributo "worldview"</td><td>Sin implementación ni evaluación completa</td></tr>
+            <tr><td><strong>Hybrid Recommender (IEEE)</strong></td><td><span class="pill pill-purple">Académico</span></td><td>CB + CF + BERT</td><td>Solo videojuegos, datos de Steam</td></tr>
+            <tr><td><strong>StreaMind</strong></td><td><span class="pill pill-green">Open Source</span></td><td>Node + MongoDB + TMDB</td><td>Sin recomendación ni cross-media</td></tr>
+            <tr><td><strong>JustWatch</strong></td><td><span class="pill pill-blue">Comercial</span></td><td>Agregador de streaming</td><td>Watchlist básica, sin juegos ni libros</td></tr>
+            <tr><td><strong>luduscore</strong></td><td><span class="pill pill-green">Open Source</span></td><td>Motor de reglas explicable</td><td>Solo consola, sin UI ni seguimiento</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="valor" class="section">
+    <div class="container">
+      <span class="section-tag">03 — Propuesta de Valor</span>
+      <h2>Los cuatro pilares de Lúmina</h2>
+      <p class="section-lead">
+        Ninguna solución actual combina seguimiento multi-media real, recomendación
+        cross-media personalizada, gestión de listas con estados y disponibilidad integrada.
+      </p>
+      <div class="grid grid-2">
+        <article class="pilar"><span class="pilar-num">01</span><h3>Recomendación cross-media real</h3><p>Basada en valoraciones, etiquetas e historial del propio usuario, usando similitud semántica. Sin depender de tener un círculo social activo.</p></article>
+        <article class="pilar"><span class="pilar-num">02</span><h3>Gestión unificada con estados</h3><p>Pendientes, En curso, Terminados y Favoritos aplicables a cualquier medio. Una sola pantalla para toda tu actividad.</p></article>
+        <article class="pilar"><span class="pilar-num">03</span><h3>Recomendación explicable</h3><p>Cada sugerencia incluye una justificación legible: "Porque te gustó X, este cómic comparte ambientación cyberpunk y temas existencialistas".</p></article>
+        <article class="pilar"><span class="pilar-num">04</span><h3>Viabilidad técnica DAM</h3><p>Stack realizable y verificable: frontend moderno, backend Node/Python, MongoDB para datos heterogéneos y APIs externas (TMDB, RAWG, Google Books).</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="section section-alt">
+    <div class="container">
+      <span class="section-tag">04 — Tecnologías</span>
+      <h2>Stack previsto</h2>
+      <div class="grid grid-4">
+        <div class="tech"><span>⚛️</span><strong>Frontend</strong><p>React / Vue + Vite</p></div>
+        <div class="tech"><span>🟩</span><strong>Backend</strong><p>Node.js + Express</p></div>
+        <div class="tech"><span>🍃</span><strong>Base de datos</strong><p>MongoDB (datos heterogéneos)</p></div>
+        <div class="tech"><span>🔌</span><strong>APIs externas</strong><p>TMDB · RAWG · Google Books</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cronograma" class="section">
+    <div class="container">
+      <span class="section-tag">05 — Cronograma</span>
+      <h2>Fases del proyecto</h2>
+      <ol class="timeline">
+        <li><span class="dot"></span><div><strong>Fase 1 — Ideación</strong><p>Definición del problema y la propuesta inicial.</p></div></li>
+        <li><span class="dot"></span><div><strong>Fase 2 — Conceptualización</strong><p>Estado del arte, patrones de búsqueda y matriz de antecedentes. <em>(Actual)</em></p></div></li>
+        <li><span class="dot"></span><div><strong>Fase 3 — Diseño</strong><p>Arquitectura, modelo de datos y prototipado de UI.</p></div></li>
+        <li><span class="dot"></span><div><strong>Fase 4 — Desarrollo</strong><p>Implementación del backend, frontend e integración de APIs.</p></div></li>
+        <li><span class="dot"></span><div><strong>Fase 5 — Validación</strong><p>Pruebas, métricas de recomendación y ajustes finales.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="equipo" class="section section-alt">
+    <div class="container">
+      <span class="section-tag">06 — Equipo</span>
+      <h2>Quiénes somos</h2>
+      <div class="grid grid-4">
+        <div class="member"><div class="avatar">A</div><strong>Miembro 1</strong><p>Backend &amp; datos</p></div>
+        <div class="member"><div class="avatar">B</div><strong>Miembro 2</strong><p>Frontend &amp; UI</p></div>
+        <div class="member"><div class="avatar">C</div><strong>Miembro 3</strong><p>Recomendación &amp; APIs</p></div>
+        <div class="member"><div class="avatar">D</div><strong>Miembro 4</strong><p>Documentación &amp; QA</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong>Lúmina</strong> — Proyecto Intermodular · Desarrollo de Aplicaciones Multiplataforma</p>
+      <p class="muted">© 2026 · Documento académico</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle?.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) { e.preventDefault(); document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 10), { passive: true });
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.card, .pilar, .tech, .member, .timeline li, .table-wrap').forEach(el => {
+      el.classList.add('reveal'); observer.observe(el);
+    });
+  </script>
+</body>
+</html>
